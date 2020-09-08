@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TarjetaFruta from "./TarjetaFruta";
+import styled from "styled-components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//estilos styled components
+const Titulo = styled.h1`
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+`;
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
+//logica del componente
+
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Titulo>LISTADO DE FRUTAS</Titulo>
+        <Container>
+          <TarjetaFruta name={"Sandia"} price={2.0} />
+          <TarjetaFruta name={"Naranja"} price={1.5} />
+          <TarjetaFruta name={"Kiwi"} price={3.33} />
+          <TarjetaFruta name={"Uva"} price={1.1} />
+          <TarjetaFruta name={"Platano"} price={2.2} />
+          <TarjetaFruta name={"Melón"} price={4.3} />
+        </Container>
+      </>
+    );
+  }
 }
 
 export default App;
