@@ -1,3 +1,7 @@
+##link: https://davidcastellobatet.github.io/FRUIT-CARD-REACT-CLASS/
+Create with REACT class components, and used Styled Components Library for CSS
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
